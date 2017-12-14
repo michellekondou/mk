@@ -59,3 +59,8 @@ typings/
 
 # private directories
 files/
+
+# editor configuration
+michelle_kondou.code-workspace
+
+
