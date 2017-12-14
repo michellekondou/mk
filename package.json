@@ -1,0 +1,19 @@
+{
+  "name": "michelle_kondou",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://michellekondou@bitbucket.org/michellekondou/michellekondou.git"
+  },
+  "author": "michelle kondou",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/michellekondou/michellekondou#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
