@@ -20,16 +20,8 @@
 {% include "partials/header.html" %}
 {% block content %}
     waiting for the content
-{% endblock %}
+{% endblock %}  
 {% include "partials/footer.html" %}
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-            <script>
-                WebFont.load({
-                    google: {
-                        families: ['Lato', 'Roboto']
-                    }
-                });
-    </script>
     <script src="/assets/js/app.min.js"></script>
 </body>
 </html>
