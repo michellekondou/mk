@@ -2,18 +2,55 @@
   "name": "michelle_kondou",
   "version": "1.0.0",
   "description": "portfolio",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp minify"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://michellekondou@bitbucket.org/michellekondou/michellekondou.git"
+    "url": "git+https://github.com/michellekondou/mk.static.git"
   },
   "author": "michelle kondou",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/michellekondou/michellekondou#readme",
+  "homepage": "",
   "dependencies": {
-    "express": "^4.16.2"
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "express": "^4.16.2",
+    "gulp": "^3.9.1",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-latest": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browserify": "^14.5.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-changed": "^3.1.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-gm": "0.0.8",
+    "gulp-gzip": "^1.4.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-image-resize": "^0.13.0",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-nunjucks": "^3.0.0",
+    "gulp-nunjucks-render": "^2.2.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-responsive-images": "0.0.3",
+    "gulp-rev": "^8.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-sqip": "^0.1.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-wait": "0.0.2",
+    "gulp-webp": "^2.3.0",
+    "nunjucks": "^3.0.1",
+    "pump": "^2.0.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0"
   }
 }

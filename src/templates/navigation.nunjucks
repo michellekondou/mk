@@ -1,0 +1,18 @@
+<ul>
+    <li>
+        <a href="#">Work</a>  
+        <ul>
+            {% for link in project_slug %}
+            <li>
+                <a href="/projects/{{ link.project_slug }}.html">{{ link.project_title }}</a>
+            </li>
+            {% endfor %}
+        </ul>    
+    </li>  
+    <li>  
+        <a href="#">About</a>
+    </li>
+    <li>
+        <a href="#">Contact</a>
+    </li>  
+</ul>

@@ -1,0 +1,42 @@
+<!-- project.nunjucks -->
+{% extends "layout.nunjucks" %} 
+{% block content %}
+<main>
+    <section>    
+        <h2>{{ project_title }}</h2>
+        <section>     
+            <h3>Project description</h3>
+            {{ project_description }}
+        </section>     
+        <section>  
+            <h3>What I did</h3>
+            {{ my_role }}  
+        </section> 
+        <section>
+            <h3>Project screens </h3>
+            {% for video in project_videos %}
+            <video    
+                data-src="/{{ video.filepath }}{{ video.filename }}" 
+                autoplay
+                {% if video.poster %} poster="{{ video.filepath }}{{ video.poster }}"{% endif %}
+                class="lazyload"
+                >
+                Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="{{ video.filepath }}{{ video.filename }}">download it</a> and watch it with your favorite video player!
+            </video>
+            {% endfor %}  
+            <ul>  
+                {% for image in project_images %}
+                <li>  
+                    <figure>
+                        <img src="/{{ image.filepath }}{{ image.filename }}.svg" data-src="/{{ image.filepath }}{{ image.filename }}-400.webp" data-srcset="/{{ image.filepath }}{{ image.filename }}.webp 1920w, /{{ image.filepath }}{{ image.filename }}-800.webp 800w, /{{ image.filepath }}{{ image.filename }}-400.webp 400w"
+                        alt="{{ project_shortname }}: {{ image.alt }}" 
+                        class="lazyload">
+                        <figcaption>{{ project_shortname }}: {{ image.caption }}</figcaption>
+                    </figure>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </section>
+</main>  
+{% endblock %}

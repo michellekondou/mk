@@ -1,0 +1,130 @@
+html {
+    font-size: 21px;  
+}
+
+img, video {
+    max-width: 100%;
+    
+}
+
+img {
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+//$sans_serif: 'Open Sans';
+$sans_serif: 'Lato';
+$serif: 'Roboto Slab';
+
+.clearfix:after {
+    content:" ";
+    display:block;
+    clear:both;
+}
+
+body {
+    background-color: #efefef;
+    color: #333;
+    margin: 0;
+    padding: 1em;
+    font: 100%/1.55 $sans_serif, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $serif, Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    margin: 0 0 .5em 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.823em;
+}
+
+h2 {
+    font-size: 2.645em;
+}
+
+h3 {
+    font-size: 2.479em;
+}
+
+h4 {
+    font-size: 2.323em;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 1em 0;
+}
+
+a {
+ 
+}
+
+// .header .inner {
+//     max-width: 800px;
+//     margin: 40px auto 0 auto;
+//     padding: 0 20px;
+// }
+
+// .header .meta {
+//     list-style: none;
+//     margin: 0;
+//     padding: 10px;
+//     border-bottom: 1px solid #ccc;
+//     display: flex;
+// }
+
+// .header .meta .index {
+//     margin-left: auto;
+// }
+
+// .header .meta li {
+//     margin: 0 20px;
+//     font-size: 0.823em;
+// }
+
+// .example {
+//     max-width: 800px;
+//     margin: 0 auto 1em auto;
+//     background-color: #fff;
+//     padding: 20px;
+//    /* border-radius: 5px;*/
+   
+// }
+
+//         .cards {
+//             margin: 0;
+//             padding: 0;
+//             list-style: none;
+//             display: grid;
+//             grid-gap: 20px;
+//             grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+//         }
+
+//         .cards li {
+//             background-color: #f4fce3;
+//             border: 1px solid #d8f5a2;
+//             padding: 10px;
+//             border-radius: 5px;
+//         }
+
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 1.3s;
+    animation-timing-function: cubic-bezier(0, 0, 0.4, 1);
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
