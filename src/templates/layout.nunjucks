@@ -94,6 +94,6 @@ document.addEventListener("DOMContentLoaded", function () {
     waiting for the content
 {% endblock %}  
 {% include "partials/footer.html" %}
-    <script src="/assets/js/app.min.js"></script>
+    <script async src="/assets/js/app.min.js"></script>  
 </body>
 </html>
