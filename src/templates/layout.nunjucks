@@ -20,11 +20,16 @@
 {% include "partials/header.html" %}
 {% block content %}
     waiting for the content
-{% endblock %}  
+{% endblock %}
 {% include "partials/footer.html" %}
-    <script>
-       "IntersectionObserver"in window&&"IntersectionObserverEntry"in window&&"intersectionRatio"in window.IntersectionObserverEntry.prototype&&!("isIntersecting"in IntersectionObserverEntry.prototype)&&Object.defineProperty(window.IntersectionObserverEntry.prototype,"isIntersecting",{get:function(){return this.intersectionRatio>0}}),window.NodeList&&!NodeList.prototype.forEach&&(NodeList.prototype.forEach=function(t,e){e=e||window;for(var r=0;r<this.length;r++)t.call(e,this[r],r,this)});class IOlazy{constructor({image:t=".lazyload",rootMargin:e="50px 0px",threshold:r=.006}={}){this.threshold=r,this.rootMargin=e,this.image=document.querySelectorAll(t),this.observer=new IntersectionObserver(this.handleChange.bind(this),{threshold:[this.threshold],rootMargin:[this.rootMargin]}),this.lazyLoad()}handleChange(t){t.forEach(t=>{t.isIntersecting&&(t.target.classList.add("visible"),t.target.getAttribute("data-srcset")&&(t.target.srcset=t.target.getAttribute("data-srcset")),t.target.getAttribute("data-src")&&(t.target.src=t.target.getAttribute("data-src")),this.observer.unobserve(t.target))})}lazyLoad(){this.image.forEach(t=>{this.observer.observe(t)})}}document.addEventListener("DOMContentLoaded",function(){new IOlazy});
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+            <script>
+                WebFont.load({
+                    google: {
+                        families: ['Lato', 'Roboto Slab']
+                    }
+                });
     </script>
-    <script async src="/assets/js/app.min.js"></script>  
+    <script src="/assets/js/app.min.js"></script>
 </body>
 </html>
