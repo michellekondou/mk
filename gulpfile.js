@@ -315,3 +315,7 @@ gulp.task('prod', function () {
 // -----------------------------------------------------------------------------
 
 gulp.task('default', ['sass', 'compress-js','minify', 'watch']);
+
+gulp.task('test', function () {
+    console.log('task running...');
+});
