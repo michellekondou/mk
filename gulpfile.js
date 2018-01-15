@@ -314,8 +314,10 @@ gulp.task('prod', function () {
 // Default task
 // -----------------------------------------------------------------------------
 
-gulp.task('default', ['sass', 'compress-js','minify', 'watch']);
+//gulp.task('default', ['sass', 'compress-js','minify', 'watch']);
 
 gulp.task('test', function () {
     console.log('task running...');
 });
+
+gulp.task('default', ['test']);
